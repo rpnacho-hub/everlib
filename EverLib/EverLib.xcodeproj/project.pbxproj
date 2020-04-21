@@ -27,6 +27,13 @@
 			remoteGlobalIDString = C466340E244F0DD100FB7CCA;
 			remoteInfo = EverLib;
 		};
+		C4663443244F2AC100FB7CCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4663406244F0DD100FB7CCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C466342C244F0EEC00FB7CCA;
+			remoteInfo = EverLibExamples;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +177,7 @@
 			);
 			dependencies = (
 				C466341B244F0DD100FB7CCA /* PBXTargetDependency */,
+				C4663444244F2AC100FB7CCA /* PBXTargetDependency */,
 			);
 			name = EverLibTests;
 			productName = EverLibTests;
@@ -296,6 +304,11 @@
 			isa = PBXTargetDependency;
 			target = C466340E244F0DD100FB7CCA /* EverLib */;
 			targetProxy = C466341A244F0DD100FB7CCA /* PBXContainerItemProxy */;
+		};
+		C4663444244F2AC100FB7CCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C466342C244F0EEC00FB7CCA /* EverLibExamples */;
+			targetProxy = C4663443244F2AC100FB7CCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
