@@ -16,6 +16,7 @@
 		C4663437244F0EEC00FB7CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4663435244F0EEC00FB7CCA /* Main.storyboard */; };
 		C4663439244F0EEF00FB7CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4663438244F0EEF00FB7CCA /* Assets.xcassets */; };
 		C466343C244F0EEF00FB7CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C466343A244F0EEF00FB7CCA /* LaunchScreen.storyboard */; };
+		C4663442244F144900FB7CCA /* EverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4663441244F144900FB7CCA /* EverManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		C4663438244F0EEF00FB7CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C466343B244F0EEF00FB7CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C466343D244F0EEF00FB7CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4663441244F144900FB7CCA /* EverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				C4663412244F0DD100FB7CCA /* EverLib.h */,
 				C4663413244F0DD100FB7CCA /* Info.plist */,
+				C4663441244F144900FB7CCA /* EverManager.swift */,
 			);
 			path = EverLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					C466340E244F0DD100FB7CCA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					C4663417244F0DD100FB7CCA = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4663442244F144900FB7CCA /* EverManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		C4663424244F0DD100FB7CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.everis.lib.EverLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		C4663425244F0DD100FB7CCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
@@ -485,6 +493,7 @@
 		C4663427244F0DD100FB7CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
 				INFOPLIST_FILE = EverLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		C4663428244F0DD100FB7CCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WSJD6HPTZ;
 				INFOPLIST_FILE = EverLibTests/Info.plist;
